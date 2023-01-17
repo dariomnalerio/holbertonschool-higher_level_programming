@@ -4,5 +4,5 @@ def uppercase(str):
         letter = ord(i)
         if letter >= 97 and letter <= 122:
             letter -= 32
-            print('{}'.format(chr(letter)), end="")
+        print('{}'.format(chr(letter)), end="")
     print()
