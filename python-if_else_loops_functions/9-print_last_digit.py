@@ -3,4 +3,5 @@ def print_last_digit(number):
     if number < 0:
         number *= -1
     lastDigit = number % 10
+    print(lastDigit, end="")
     return lastDigit
