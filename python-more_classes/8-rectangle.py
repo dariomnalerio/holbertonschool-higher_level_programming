@@ -64,10 +64,10 @@ class Rectangle:
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         if isinstance(rect_1, Rectangle) == 0:
             raise TypeError("rect_1 must be an instance of Rectangle")
         if isinstance(rect_2, Rectangle) == 0:
             raise TypeError("rect_2 must be an instance of Rectangle")
-    # if values are the same, returns first encounter (Rectangle.area(rect_1))
-        return max(rect_1.area(), rect_2.area())
+        return rect_1 if rect_1.area() >= rect_2.area() else rect_2
