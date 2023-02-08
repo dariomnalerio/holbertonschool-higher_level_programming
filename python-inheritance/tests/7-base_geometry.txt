@@ -11,10 +11,10 @@ TypeError: float_value must be an integer
 
 >>> bg.integer_validator("string0", "string1")
 Traceback (most recent call last):
-TypeError: string1 must be an integer
+TypeError: string0 must be an integer
 
 >>> bg.integer_validator("test", -5)
 Traceback (most recent call last):
-ValueError: <name> must be greater than 0
+ValueError: test must be greater than 0
 
 >>> bg.integer_validator("test", 5)
