@@ -40,3 +40,4 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 >>> print(my_list)
 []
 >>> my_list.print_sorted()
+[]
