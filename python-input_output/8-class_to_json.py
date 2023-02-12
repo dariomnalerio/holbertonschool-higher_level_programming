@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-""" Module for adding Python arguments to a list and saving them to a file """
-
-
-import json
+""" Module for getting dictionary description """
 
 
 def class_to_json(obj):
