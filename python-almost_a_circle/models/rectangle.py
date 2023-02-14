@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """" Module containing rectangle class """
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -64,3 +64,12 @@ class Rectangle(Base):
     def area(self):
         """ Returns rectangle's area """
         return self.__height * self.__width
+
+    def display(self):
+        """ Prints in stdout the Rectangle
+        instance with the character # """
+        if self.area() == 0:
+            print()
+        else:
+            for height in range(self.__height):
+                print("#" * self.__width)
