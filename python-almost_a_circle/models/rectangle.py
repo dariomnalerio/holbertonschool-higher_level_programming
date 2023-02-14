@@ -71,8 +71,10 @@ class Rectangle(Base):
         if self.area() == 0:
             print()
         else:
-            for height in range(self.__height):
-                print("#" * self.__width)
+            for i in range(self.__y):
+                print()
+            for i in range(self.__height):
+                print(" " * self.__x + "#" * self.__width)
 
     def __str__(self):
         """ Overrides the __str__ method """
@@ -82,3 +84,13 @@ class Rectangle(Base):
         width = self.__width
         height = self.__height
         return f"[Rectangle] ({id}) {x}/{y} - {width}/{height}"
+
+if __name__ == "__main__":
+
+    r1 = Rectangle(2, 3, 2, 2)
+    r1.display()
+
+    print("---")
+
+    r2 = Rectangle(3, 2, 1, 0)
+    r2.display()
