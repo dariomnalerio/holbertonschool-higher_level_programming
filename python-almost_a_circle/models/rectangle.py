@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """" Module containing rectangle class """
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -15,32 +15,48 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        return self._width
+        return self.__width
 
     @width.setter
     def width(self, value):
-        self._width = value
+        if type(value) != int:
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
+        self.__width = value
 
     @property
     def heigth(self):
-        return self._height
+        return self.__height
 
     @heigth.setter
     def height(self, value):
-        self._height = value
+        if type(value) != int:
+            raise TypeError("height must be an integer")
+        if value <= 0:
+            raise ValueError("height must be > 0")
+        self.__height = value
 
     @property
     def x(self):
-        return self.x
+        return self.__x
 
     @x.setter
     def x(self, value):
-        self._x = value
+        if type(value) != int:
+            raise TypeError("x must be an integer")
+        if value <= 0:
+            raise ValueError("x must be > 0")
+        self.__x = value
 
     @property
     def y(self):
-        return self.y
+        return self.__y
 
     @y.setter
     def y(self, value):
-        self._y = value
+        if type(value) != int:
+            raise TypeError("y must be an integer")
+        if value <= 0:
+            raise ValueError("y must be > 0")
+        self.__y = value
