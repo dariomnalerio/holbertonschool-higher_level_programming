@@ -84,7 +84,7 @@ class Rectangle(Base):
         width = self.__width
         height = self.__height
         return f"[Rectangle] ({id}) {x}/{y} - {width}/{height}"
-    
+
     def update(self, *args):
         """ Assigns an argument to each attribute """
         if len(args) >= 1:
