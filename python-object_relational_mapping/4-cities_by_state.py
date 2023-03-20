@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 4-cities_by_state """
+"""4-cities_by_state"""
 from sys import argv
 import MySQLdb
 
