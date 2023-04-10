@@ -6,6 +6,6 @@ const args = process.argv.slice(2);
 if (args.length <= 1) {
   console.log(0);
 } else {
-  const sortedArgs = args.sort();
+  const sortedArgs = args.sort((a, b) => a - b); // comparison function to sort numbers in ascending order
   console.log(sortedArgs[sortedArgs.length - 2]);
 }
