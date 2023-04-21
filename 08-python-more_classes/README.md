@@ -27,4 +27,5 @@
 -   What is and what does contain  `__dict__`  of a class and of an instance of a class
 -   How does Python find the attributes of an object or class
 -   How to use the  `getattr`  function
+
 <a> <img src="https://apply.holbertonschool.com/holberton-logo.png" alt="Holberton logo" width=18% heigth=18% ></img></a>
