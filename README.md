@@ -19,7 +19,7 @@ This section contains assignments and projects related to the second and third t
 -   SQL more queries
 -   Object-relational mapping
 
-## Javascript 
+## <a  href="https://www.python.org/"> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png" alt="JS Language" width=5%></img></a> JavaScript - Objects, Scopes and Closures Javascript 
 
 -   Warm Up
 -   Objects, Scopes and Closures
